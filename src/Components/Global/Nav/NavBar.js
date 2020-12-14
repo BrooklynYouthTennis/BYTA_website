@@ -1,6 +1,6 @@
 import React from 'react'
 import "./NavBar.css"
-// import NavBarSearch from './NavBarSearch/NavBarSearch'
+import NavBarSearch from './NavBarSearch/NavBarSearch'
 import Logo from '../../../Assets/NavbarImages/WCTDLogo.jpg'
 
 
@@ -8,7 +8,7 @@ import Logo from '../../../Assets/NavbarImages/WCTDLogo.jpg'
 function NavBar() {
   return (
     <div className="navbar" >
-      {/* <a href="/"><img src={Logo} className="brand-title" alt="byta" /></a> */}
+      <a href="/"><img src={Logo} className="brand-title" alt="byta" /></a>
 
       <a href="/" className="toggle-button">
         <span className="bar"></span>
@@ -53,7 +53,7 @@ function NavBar() {
       </ul>
 
       <ul id="navbar-links">
-        {/* <NavBarSearch /> */}
+        <NavBarSearch />
         {/* <a href="/"><img src={Vector} className="vector" alt="placeHolder" /></a> */}
       </ul>
 
