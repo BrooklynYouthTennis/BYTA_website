@@ -1,0 +1,47 @@
+.container {
+  width: 1fr;
+  height: 88px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.searchbar {
+  width: 1168px;
+  height: 48px;
+  margin: 0 auto;
+  background: #f8f8f8;
+  border-radius: 4px;
+
+  /* main-body-text */
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 36px;
+display: flex;
+align-items: center;
+letter-spacing: 0.05em;
+color: #84838A;
+
+}
+
+.button {
+  display: flex;
+  height: 30px;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.searchbar:hover + .button {
+  height: 2.5rem;
+  top: 1.8rem;
+  right: 0;
+}
+
+.searchbar::placeholder {
+  opacity: 0.3;
+}
