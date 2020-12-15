@@ -1,7 +1,6 @@
 import React from 'react'
 import "./NavBar.css"
 import NavBarSearch from './NavBarSearch/NavBarSearch'
-import Vector from '../../../Assets/NavbarImages/Vector.jpg'
 import Logo2 from '../../../Assets/NavbarImages/BYTA_Logo.png'
 
 
@@ -32,7 +31,7 @@ function NavBar() {
 
 
       <div className="dropdown" id="navbar-links">
-        <ul id="navbar-links">
+        <ul >
           <li className="navbarLi"><a href="/getinvolved" className="navbarText">Get Involved</a></li>
           <div className="dropdown-content">
             <a href="/getinvolved/becomesponsor">Become a Sponsor</a>
@@ -42,15 +41,21 @@ function NavBar() {
         </ul>
       </div>
 
-      <ul id="navbar-links">
-        <li className="navbarLi">
-          <a href="/ContactUs" className="navbarText">Contact Us</a>
-        </li>
+      <div className="dropdown" id="navbar-links">
+        <ul >
+          <li className="navbarLi">
+            <a href="/ContactUs" className="navbarText">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+
+      <ul id="navbar-button">
+        <li><a href="/supportUs/donate" className="navbarButtonText" id="donateColor">Donate</a></li>
       </ul>
 
-      <ul id="navbar-links">
-        <li><a href="/supportUs/donate" className="navbarText" id="donateColor">Donate</a></li>
-      </ul>
+      {/* <div>
+        <a href="/supportUs/donate" className="navbarButtonText" id="donateColor">Donate</a>
+      </div> */}
 
       <ul id="navbar-links">
         <NavBarSearch />
