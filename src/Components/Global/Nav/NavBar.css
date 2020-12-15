@@ -149,9 +149,7 @@ left: 5%;
 	/* color: #000000; */
 }
 .dropdown:hover .dropdown-content {
-  display: block;
-  
-  
+  display: block; 
 }
 
 

@@ -8,6 +8,7 @@ function NavBar() {
   return (
     <div className="navbar" >
       {/* <a href="/"><img src={Logo} className="brand-title" alt="byta" /></a> */}
+
       <a href="/"><img src={Logo2} className="brand-title" alt="byta" /></a>
       <a href="/" className="toggle-button">
         <span className="bar"></span>
