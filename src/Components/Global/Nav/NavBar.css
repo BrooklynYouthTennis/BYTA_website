@@ -10,10 +10,49 @@ position: fixed;
 /* z-index: 10; */
 }
 
+
+
+/* ====================
+========Logo============
+==================== */
+
 .brand-title {
 	margin: 1rem;
 	height: 60px;
 }
+
+/* ====================
+====Burger Menu=====
+==================== */
+.toggle-button {
+	position: absolute;
+	top: 3rem;
+	right: 1rem;
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 30px;
+	height: 21px;
+}
+
+.toggle-button .bar {
+	height: 3px;
+	width: 100%;
+	background-color: black;
+	border-radius: 10px;
+}
+
+/* =============================
+====Nav Bar Menu Main Links=====
+============================== */
+
+/* #navbar-links {
+	width: auto;
+	padding: 0;
+	align-self: center;
+	height: 89px;
+	margin: auto;
+} */
 
 #navbar-links li {
 	list-style: none;
@@ -32,3 +71,139 @@ position: fixed;
 	font-weight: 500;
 	line-height: 20px;
 }
+
+
+.navbarLi {
+	height: 89px;
+	display: flex;
+	align-items: center;
+}
+
+.navbarLi:hover:before {
+	color: #00ced1;
+	list-style: none;
+	content: "\2022";
+	font-size: 2em;
+	left: 0.45em;
+	position: absolute;
+	top: 0.1em;
+}
+
+.navbarLi:hover {
+	position: relative;
+	display: inline-block;
+	margin-top: 13px;
+}
+
+.navbarText {
+	height: 40px;
+	line-height: 20px;
+  display: flex;
+  flex-direction: column;
+	align-items: center;
+	letter-spacing: 0.16em;
+	text-transform: uppercase;
+	color: #3a3748;
+}
+
+.topnav a:hover,
+.dropdown:hover .dropbtn {
+	background-color: #f5f5f5;
+}
+
+/* =============================
+==========Nav Bar sub Links=====
+============================== */
+.dropdown {
+	float: left;
+}
+
+.dropdown .navbarText {
+	font-weight: 500;
+	font-size: 16px;
+	border: none;
+	outline: none;
+	padding: 14px 16px;
+	margin: 0;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	top: 84px;
+	background-color: #f5f5f5;
+	z-index: 5;
+	border-radius: 5px;
+	font-size: 20px;
+	margin-top: 5px;
+}
+
+.dropdown-content a {
+	float: none;
+	color: #000000;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.dropdown-content a:hover {
+	background-color: #00ced1;
+	color: #000000;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+
+/* =============================
+==========Donate Button=========
+============================== */
+
+#donateColor {
+	height: 20px;
+	/* margin: 0; */
+	background: #00ced1;
+	border-radius: 4px;
+}
+
+
+
+/* =============================
+==========Media Queries=========
+============================== */
+@media (max-width: 1340px) {
+	.toggle-button {
+		display: flex;
+	}
+	#navbar-links {
+		display: none;
+		width: 100%;
+	}
+	.vector {
+		display: none;
+	}
+	.navbar {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	#navbar-links ul {
+		width: 100%;
+		flex-direction: column;
+	}
+
+	#navbar-links li {
+		text-align: center;
+	}
+
+	#navbar-links li a {
+		padding: 0.5rem 1rem;
+	}
+
+	#navbar-links.active {
+		display: flex;
+	}
+}
+

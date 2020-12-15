@@ -1,15 +1,15 @@
 import React from 'react'
 import "./NavBar.css"
 import NavBarSearch from './NavBarSearch/NavBarSearch'
-import Logo from '../../../Assets/NavbarImages/WCTDLogo.jpg'
-
+import Vector from '../../../Assets/NavbarImages/Vector.jpg'
+import Logo2 from '../../../Assets/NavbarImages/BYTA_Logo.png'
 
 
 function NavBar() {
   return (
     <div className="navbar" >
-      <a href="/"><img src={Logo} className="brand-title" alt="byta" /></a>
-
+      {/* <a href="/"><img src={Logo} className="brand-title" alt="byta" /></a> */}
+      <a href="/"><img src={Logo2} className="brand-title" alt="byta" /></a>
       <a href="/" className="toggle-button">
         <span className="bar"></span>
         <span className="bar"></span>
