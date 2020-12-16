@@ -2,6 +2,9 @@
   border: solid red 2pt;
   padding: 0;
   display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-rows: repeat(20, 25px);
+    background-image: url('../../Assets/city_tennis_hero.png');
 
 }
 
@@ -30,7 +33,6 @@
   text-align: center;
   display: table-cell;
   vertical-align: middle;
-
 position: relative;
 left: 20px;
 }
@@ -45,8 +47,6 @@ left: 20px;
   width: 443px;
   margin-top: -15px;
   background-color: white;
-  
-  
 }
 
 .heroSlogan_text{

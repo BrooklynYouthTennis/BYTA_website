@@ -10,7 +10,7 @@ function Header(props) {
       <div className="hero-text-block">
         <h2 className="heroTitle">The motto</h2>
         <div className="heroSlogan_block">
-          <div className="heroSlogan_text">
+          <div className="heroSlogan">
             Talk with your racquet, play with your heart.
         </div>
         </div>
