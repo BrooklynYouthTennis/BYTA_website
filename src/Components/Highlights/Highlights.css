@@ -6,19 +6,19 @@ background-color: #C1F7D5;
 
 
 .highlights_title{
-  font-family: "komet", sans-serif;
-  font-size: 10px;
-  font-weight: bold;
-  background-color: #354463;
-  color: white;
-  text-transform: uppercase;
-  padding: 10px 25px;
-  text-align: center;
-  display: table-cell;
-  vertical-align: middle;
+display: table-cell;
 position: relative;
 left: 50vw;
 top: -15px;
+font-family: "komet", sans-serif;
+font-size: 12px;
+font-weight: 200;
+background-color: #354463;
+color: white;
+text-transform: uppercase;
+padding: 10px 25px;
+text-align: center;
+letter-spacing: 2px;
 }
 
 
@@ -38,7 +38,9 @@ grid-auto-flow: column;
 .highlights_grid h1{
   border: solid red 2pt;
   font-family: "PoynterOSDisp", sans-serif;
-  
+  color: #354463;
+  font-size: 20px;
+  /* margin: auto; */
 }
 
 
@@ -46,5 +48,9 @@ grid-auto-flow: column;
 
 .highlights_grid p {
   border: solid green 2pt;
+  color: #354463;;
   font-family: "komet", sans-serif;
+
+
+  
 }
