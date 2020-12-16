@@ -1,6 +1,6 @@
 import React from 'react'
-import "./NavBar.css"
 import Logo2 from '../../../Assets/NavbarImages/BYTA_Logo.png'
+// import "./NavBar.css"
 // import NavBarSearch from './NavBarSearch/NavBarSearch'
 
 
