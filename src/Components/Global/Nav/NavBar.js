@@ -61,16 +61,10 @@ function NavBar() {
 
 
 
-      <ul id="navbar-button">
-        <li><a href="/supportUs/donate" className="navbarButtonText" id="donateColor">Donate</a></li>
+      <ul className="navbar-button">
+        <li><a href="/supportUs/donate" className="navbarButtonText" id="donateColor">Support Us</a></li>
       </ul>
 
-
-
-
-      <div>
-        <a href="/supportUs/donate" className="navbarButtonText" id="donateColor">Donate</a>
-      </div>
 
       {/* <ul id="navbar-links"> */}
       {/* <NavBarSearch /> */}

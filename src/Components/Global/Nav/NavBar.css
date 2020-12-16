@@ -1,9 +1,8 @@
 .navbar {
-  border: solid blue 2px;;
+  /* border: solid blue 2px;; */
+  /* justify-content: center; */
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
   display: flex;
-/* justify-content: center; */
-/* background: #fdfdfd; */
-/* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
 width: 90vw;
 height: 120px;
 position: fixed;
@@ -47,12 +46,12 @@ grid-template-columns: 2fr 3fr 1fr;
 ====Nav Bar Menu Main Links=====
 ============================== */
 .navbar_menu_options {
-  border: solid purple 2pt;
+  /* border: solid purple 2pt; */
   display: flex;
 }
 
 #navbar-links {
-  border: solid greenyellow 2px;
+  /* border: solid greenyellow 2px; */
   padding: 0; 
   margin: auto; 
 }
@@ -65,11 +64,11 @@ grid-template-columns: 2fr 3fr 1fr;
 
 
 .navbarLi {
-  border: #00ced1 solid 2pt;
+  /* border: #00ced1 solid 2pt; */
   text-transform: uppercase;
 	font-size: 1.1vw;
   font-family: komet, sans-serif;
-  font-weight: 300;
+  font-weight: 400;
 	height: 29px;
 	display: flex;
   align-items: center;
@@ -133,39 +132,50 @@ grid-template-columns: 2fr 3fr 1fr;
 /* =============================
 ==========Donate Button=========
 ============================== */
-#navbar-button{
-  border: solid red 2px;
-	width: auto;
-  padding: 0;
-  height: 89px;
+.navbar-button{
+  /* border: solid red 2px; */
+  padding: 0px;
+  height: 48px;
+  height: 4vw;
+  /* width: 160px; */
+  width: 13vw;
   margin:auto;
+  background-color: #C1F7D5;
+  /* background-color:#BDD638; */
+  border-radius: 25px;
+  list-style-type: none;
+  text-align: center;
+  /* vertical-align: center; */
 }
 
-#donateColor {
-	height: 20px;
-  color:  #354463;
-  background-color: #C1F7D5;
-  border-radius: 0.5px;
-  height: 8px;
-}
+
 
 .navbarButtonText{
-
+  /* border: solid blue 2px; */
+  text-decoration: none;
+  color:  #354463;
+  font-family: PoynterOSDisp, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  /* vertical-align: center; */
 }
-
 
 
 /* =============================
 ==========Media Queries=========
 ============================== */
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
 	.toggle-button {
 		display: flex;
 	}
 	#navbar-links {
 		display: none;
-		width: 100%;
-	}
+		/* width: 100%; */
+  }
+  
+  .navbar-button{
+    display: none;
+  }
 	
 	.navbar {
 		flex-direction: column;
