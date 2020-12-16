@@ -8,8 +8,10 @@ function NavBar() {
   return (
     <div className="navbar" >
 
+      <div className="navbar_logo">
+        <a href="/"><img src={Logo2} className="brand-title" alt="byta" /></a>
+      </div>
 
-      <a href="/"><img src={Logo2} className="brand-title" alt="byta" /></a>
 
 
       <a href="/" className="toggle-button">
@@ -20,38 +22,39 @@ function NavBar() {
 
 
 
+      <div className="navbar_menu_options">
+        <div className="dropdown" id="navbar-links">
+          <ul>
+            <li className="navbarLi"><a href="/about" >About Us</a></li>
+            <div className="dropdown-content">
+            </div>
+          </ul>
+        </div>
 
-      <div className="dropdown" id="navbar-links">
-        <ul>
-          <li className="navbarLi"><a href="/about" className="navbarText">About Us</a></li>
-          <div className="dropdown-content">
-          </div>
-        </ul>
-      </div>
+        <div className="dropdown" id="navbar-links">
+          <ul>
+            <li className="navbarLi"><a href="/Programs" >Our Programs</a></li>
+          </ul>
+        </div>
 
-      <div className="dropdown" id="navbar-links">
-        <ul>
-          <li className="navbarLi"><a href="/Programs" className="navbarText">Our Programs</a></li>
-        </ul>
-      </div>
+        <div className="dropdown" id="navbar-links">
+          <ul >
+            <li className="navbarLi"><a href="/getinvolved" >Get Involved</a></li>
+            <div className="dropdown-content">
+              <a href="/getinvolved/becomesponsor">Become a Sponsor</a>
+              <a href="/UnderConstruction">Volunteer</a>
+              <a href="/UnderConstruction">Donate</a>
+            </div>
+          </ul>
+        </div>
 
-      <div className="dropdown" id="navbar-links">
-        <ul >
-          <li className="navbarLi"><a href="/getinvolved" className="navbarText">Get Involved</a></li>
-          <div className="dropdown-content">
-            <a href="/getinvolved/becomesponsor">Become a Sponsor</a>
-            <a href="/UnderConstruction">Volunteer</a>
-            <a href="/UnderConstruction">Donate</a>
-          </div>
-        </ul>
-      </div>
-
-      <div className="dropdown" id="navbar-links">
-        <ul >
-          <li className="navbarLi">
-            <a href="/ContactUs" className="navbarText">Contact Us</a>
-          </li>
-        </ul>
+        <div className="dropdown" id="navbar-links">
+          <ul >
+            <li className="navbarLi">
+              <a href="/ContactUs" >Contact Us</a>
+            </li>
+          </ul>
+        </div>
       </div>
 
 
@@ -65,9 +68,9 @@ function NavBar() {
 
 
 
-      {/* <div>
+      <div>
         <a href="/supportUs/donate" className="navbarButtonText" id="donateColor">Donate</a>
-      </div> */}
+      </div>
 
       {/* <ul id="navbar-links"> */}
       {/* <NavBarSearch /> */}

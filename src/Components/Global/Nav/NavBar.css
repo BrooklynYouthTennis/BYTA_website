@@ -8,6 +8,8 @@ width: 90vw;
 height: 120px;
 position: fixed;
 left: 5%;
+display: grid;
+grid-template-columns: 2fr 3fr 1fr;
 
 }
 
@@ -44,85 +46,60 @@ left: 5%;
 /* =============================
 ====Nav Bar Menu Main Links=====
 ============================== */
+.navbar_menu_options {
+  border: solid purple 2pt;
+  display: flex;
+}
 
 #navbar-links {
   border: solid greenyellow 2px;
-	width: auto;
-  padding: 0;
-  margin:auto;
-  margin: 0;
-  /* height: 89px; */
-  /* display: block; */
-  /* align-self: end; */
-  margin-left: 0;
-  list-style-type:none
-  
+  padding: 0;  
 }
 
 
 #navbar-links li a {
-	text-decoration: none;
-	text-transform: uppercase;
-	font-size: 16px;
-  font-family: komet, sans-serif;
-  font-weight: 300;
-	color: #354463;
-  
-  
+  text-decoration: none;
+  color: #354463; 
 }
 
 
 .navbarLi {
-	height: 89px;
+  border: #00ced1 solid 2pt;
+  text-transform: uppercase;
+	font-size: 1.1vw;
+  font-family: komet, sans-serif;
+  font-weight: 300;
+	height: 29px;
 	display: flex;
-	align-items: center;
+  align-items: center;
+  width: 100%;
+  margin: auto;
 }
 
 .navbarLi:hover:before {
 	color: #00ced1;
 	list-style: none;
-	font-size: 2em;
-	left: 0.45em;
 	position: absolute;
-
 }
 
 .navbarLi:hover {
-	position: relative;
-  display: inline-block;
-  
-
+  position: relative;
+  background-color: #C1F7D5;
+  /* display: inline-block; */
 }
 
-.navbarText {
-	height: 40px;
-	line-height: 20px;
-  display: flex;
-  flex-direction: column;
-	align-items: center;
-	letter-spacing: 0.16em;
-	/* text-transform: uppercase; */
-  color: #3a3748;
- 
+/* .dropdown-content a:hover {
+	background-color: #C1F7D5;
 }
-
+.dropdown:hover .dropdown-content {
+  display: block; 
+} */
 
 
 /* =============================
 ==========Nav Bar sub Links=====
 ============================== */
-/* .dropdown {
-	float: left;
-} */
 
-/* .dropdown .navbarText {
-	font-weight: 500;
-	font-size: 16px;
-	border: none;
-	outline: none;
-	padding: 14px 16px;
-	margin: 0;
-} */
 
 .dropdown-content {
 	display: none;
@@ -131,22 +108,20 @@ left: 5%;
 	background-color: #f5f5f5;
 	z-index: 5;
 	border-radius: 5px;
-	font-size: 20px;
-	/* margin-top: 5px; */
 }
 
 .dropdown-content a {
 	float: none;
 	color: #354463;
-	padding: 12px 16px;
+	padding: 12px 10px;
 	text-decoration: none;
 	display: block;
-	text-align: left;
+  text-align: left;
+  font-size: 12px;
 }
 
 .dropdown-content a:hover {
 	background-color: #C1F7D5;
-	/* color: #000000; */
 }
 .dropdown:hover .dropdown-content {
   display: block; 
