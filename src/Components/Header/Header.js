@@ -1,5 +1,5 @@
 import React from "react";
-import HeroImg from "../../../Assets/city_tennis_hero.png";
+import HeroImg from "../../Assets/city_tennis_hero.png";
 import "./Header.css";
 
 function Header(props) {
@@ -9,7 +9,11 @@ function Header(props) {
 
       <div className="hero-text-block">
         <h2 className="heroTitle">The motto</h2>
-        <h4 className="heroSlogan">Talk with your racquet, play with your heart.</h4>
+        <div className="heroSlogan">
+          {/* <span className="heroSlogan_text"> */}
+            Talk with your racquet, play with your heart.
+            {/* </span> */}
+        </div>
 
       </div>
     </div>
