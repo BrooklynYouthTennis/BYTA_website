@@ -53,14 +53,7 @@ function NavBar() {
         </div>
       </div>
 
-
-
-
-
-      {/* <ul className="navbar-button"> */}
       <a href="/supportUs/donate" className="navbar-button" id="donateColor">Support Us</a>
-      {/* </ul> */}
-
 
       {/* <ul id="navbar-links"> */}
       {/* <NavBarSearch /> */}
