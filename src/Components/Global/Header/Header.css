@@ -1,0 +1,92 @@
+.hero-container {
+  border: solid red 2pt;
+  padding: 0;
+  /* margin-top: 100px; */
+  display: grid;
+  height: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    ". . . . . . ."
+    "i i i i i i i"
+    "i i i i i i i"
+    "i i i i i i i"
+    "i i i i i i i";
+    margin-top: -60px;
+}
+
+.hero-image {
+  width: 100%;
+  /* display: inline; */
+  grid-area: i;
+  /* margin-top: -60px; */
+  
+}
+
+.hero-text-block {
+  display: grid;
+  position: relative;
+  text-align: left;
+  grid-column: 1 / span 4;
+  grid-row: 3 / span 2;
+  margin-left: 3vw;
+  margin-top: -20px;
+}
+.heroTitle {
+  font-family: "komet", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #354463;
+  color: white;
+  text-transform: uppercase;
+  width: 160px;
+  height: 40px;
+  text-align: center;
+}
+
+.heroSlogan {
+  font-family: "poynterOSDisp", sans-serif;
+  font-size: 44px;
+  font-weight: 900;
+  background-color: white;
+  height: 304px;
+  width: 443px;
+  margin-top: -15px;
+}
+
+@media (max-width: 768px) {
+  .hero-image {
+    display: none;
+  }
+
+  .hero-container {
+    background-color: #e7f2f5;
+    width: 100%;
+    margin-top: 1px;
+    margin-bottom: 50px;
+    display: flex;
+    height: 330px;
+  }
+
+ 
+
+  .hero-text-block {
+    margin: auto;
+    width: 100%;
+  }
+  .heroTitle {
+    /* font-family: "Cormorant", serif; */
+    font-size: 9vw;
+    font-weight: bold;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  .heroSlogan {
+    /* font-family: "Cormorant", serif; */
+    font-size: 4vw;
+    font-weight: 500;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+}
