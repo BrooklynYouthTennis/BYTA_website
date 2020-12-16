@@ -1,8 +1,7 @@
 import React from "react";
-import HeroImg from "../../Assets/city_tennis_hero.png";
 import "./Header.css";
 
-function Header(props) {
+function Header() {
   return (
     <div className="hero-container">
       <div className="hero-text-block">

@@ -1,0 +1,50 @@
+.highlights {
+background-color: #C1F7D5;
+}
+
+
+
+
+.highlights_title{
+  font-family: "komet", sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  background-color: #354463;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px 25px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+position: relative;
+left: 50vw;
+top: -15px;
+}
+
+
+
+
+.highlights_grid{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: 1fr 1fr;
+/* grid-gap: 10px; */
+padding: 20px 100px;
+grid-auto-flow: column;
+}
+
+
+
+.highlights_grid h1{
+  border: solid red 2pt;
+  font-family: "PoynterOSDisp", sans-serif;
+  
+}
+
+
+
+
+.highlights_grid p {
+  border: solid green 2pt;
+  font-family: "komet", sans-serif;
+}
