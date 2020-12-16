@@ -1,38 +1,24 @@
 .hero-container {
-  /* border: solid red 2pt; */
+  border: solid red 2pt;
   padding: 0;
-  /* margin-top: 100px; */
   display: grid;
-  height: auto;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas:
-    ". . . . . . ."
-    "i i i i i i i"
-    "i i i i i i i"
-    "i i i i i i i"
-    "i i i i i i i";
-    margin-top: -60px;
+
 }
 
 .hero-image {
   width: 100%;
   /* display: inline; */
-  grid-area: i;
   /* margin-top: -60px; */
   
 }
 
 .hero-text-block {
-  display: grid;
-  position: relative;
-  text-align: left;
-  grid-column: 1 / span 4;
-  grid-row: 3 / span 2;
-  margin-left: 3vw;
-  margin-top: -20px;
+  /* border: solid green 2pt; */
+  margin: 0;
+  padding: 0;
 }
 .heroTitle {
+  /* border: solid yellow 2pt; */
   font-family: "komet", sans-serif;
   font-size: 14px;
   font-weight: bold;
@@ -42,10 +28,15 @@
   width: 160px;
   height: 40px;
   text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+
+position: relative;
+left: 20px;
 }
 
-.heroSlogan {
-  /* border: solid red 2pt; */
+.heroSlogan_block {
+  border: solid purple 2pt;
   font-family: "poynterOSDisp", sans-serif;
   font-size: 44px;
   font-weight: 900;
@@ -53,14 +44,21 @@
   height: 304px;
   width: 443px;
   margin-top: -15px;
- 
+  z-index: 1;
+  background-color: white;
+  
+  
 }
-
 
 .heroSlogan_text{
-  /* margin: auto; */
+  /* border: solid pink 2pt; */
+  width: 95%;
+  margin-left: auto;
+  margin-top: 70px;
+position: relative;
 
 }
+
 
 /* @media (max-width: 768px) {
   .hero-image {
