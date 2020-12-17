@@ -6,6 +6,7 @@ import NavBar from './Components/Global/Nav/NavBar'
 import Header from './Components/Header/Header'
 import Highlights from './Components/Highlights/Highlights'
 import Programs from './Components/Programs/Programs'
+import Skills from './Components/Skills/Skills'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Header />
       <Highlights />
       <Programs />
+      <Skills />
     </>
   );
 }
