@@ -3,7 +3,7 @@
   width: 100vw;
   height: 800px;
   background-size: cover;
-  padding-top: 150px;
+  padding-top: 80px;
 }
 
 .sponsorships_title{
@@ -24,29 +24,53 @@
 }
 
 .sponsorships_description{
-
+  font-family: "PoynterOSDisp", sans-serif;
+  font-size: 44pt;
+  color: white;
+  width: 80%;
+  margin: auto;
+  margin-top: 60px;
+  background-color: #354463;
+  opacity: .5;
+  padding: 40px;
 }
 
 .sponsorships_logos{
-
+  /* border: solid red 2pt; */
+display: flex;
+justify-content: space-evenly;
+width: 90%;
+margin: auto;
+margin-top: 40px;
 }
 
 .sponsor1 {
-
+background-image: url('../../Assets/sponsor2.png');
+width: 150px;
+height: 150px;
+/* display: flex; */
 }
 
-.sponsor2 {
-  
-}
+/* .sponsor2 {
+  background-image: url('../../Assets/sponsor2.png');
+  width: 150px;
+height: 150px;
+} */
 
 .sponsor3 {
-  
+  background-image: url('../../Assets/sponsor3.png');
+  width: 150px;
+height: 150px;
 }
 
 .sponsor4 {
-  
+  background-image: url('../../Assets/sponsor4.png');
+  width: 150px;
+height: 150px;
 }
 
 .sponsor5 {
-  
+  background-image: url('../../Assets/sponsor5.png');
+  width: 150px;
+height: 150px;
 }
