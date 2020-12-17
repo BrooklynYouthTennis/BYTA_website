@@ -7,6 +7,8 @@ import Header from './Components/Header/Header'
 import Highlights from './Components/Highlights/Highlights'
 import Programs from './Components/Programs/Programs'
 import Skills from './Components/Skills/Skills'
+// import Testimonials from './Components/Testimonials/Testimonials'
+import Impact from './Components/Impact/Impact'
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
       <Highlights />
       <Programs />
       <Skills />
+      {/* <Testimonials /> */}
+      <Impact />
     </>
   );
 }
