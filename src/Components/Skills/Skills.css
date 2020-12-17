@@ -1,5 +1,5 @@
 .skills{
-  border: 1px solid red;
+  /* border: 1px solid red; */
 
   background-image: url('../../Assets/skills_img.png');
   background-repeat: no-repeat;
@@ -19,7 +19,7 @@
 } 
 
 .skills_heading{
-  border: #354463 solid 2px;
+  /* border: #354463 solid 2px; */
   font-family: "Flood Std", sans-serif;
   font-size: 80px;
   width: 400px;
