@@ -1,5 +1,6 @@
 import React from 'react'
 import './Programs.css'
+// import '../../Assets/afterschool_img'
 
 export default function Programs() {
   return (
@@ -23,8 +24,7 @@ export default function Programs() {
 
         <div className="programs_grid_card">
           <div className="community_img"></div>
-          <h1>Community Youth
-Lessons</h1>
+          <h1>Community Youth Lessons</h1>
           <p>Sessions go for 90 minutes and are held on tennis courts at local parks. The program’s curriculum is tailored to accommodate different ages and skill levels. Incorporate life skills like teamwork + sportsmanship.</p>
           <a href="/programs/communitylessons" className="programs_gridcard_button">Read More</a>
         </div>
