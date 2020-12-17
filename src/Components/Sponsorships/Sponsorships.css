@@ -1,0 +1,52 @@
+.sponsorships{
+  background-image: url('../../Assets/sponsorships.png');
+  width: 100vw;
+  height: 800px;
+  background-size: cover;
+  padding-top: 150px;
+}
+
+.sponsorships_title{
+  /* display: table-cell; */
+  vertical-align: middle;
+  font-family: "komet", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #354463;
+  background-color: white;
+  text-transform: uppercase;
+  padding: 10px 25px;
+  text-align: center;
+  letter-spacing: 2px;
+  margin: auto;
+  width: 210px;
+  
+}
+
+.sponsorships_description{
+
+}
+
+.sponsorships_logos{
+
+}
+
+.sponsor1 {
+
+}
+
+.sponsor2 {
+  
+}
+
+.sponsor3 {
+  
+}
+
+.sponsor4 {
+  
+}
+
+.sponsor5 {
+  
+}

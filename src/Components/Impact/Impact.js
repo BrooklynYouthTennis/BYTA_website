@@ -1,6 +1,5 @@
 import React from 'react'
 import './Impact.css'
-// import '../../Assets/'
 
 
 export default function Impact() {

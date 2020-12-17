@@ -1,5 +1,6 @@
 import React from 'react'
 import Logo2 from '../../../Assets/NavbarImages/BYTA_Logo.png'
+import Logo from '../../../Assets/NavbarImages/bytalogo.png'
 import "./NavBar.css"
 // import NavBarSearch from './NavBarSearch/NavBarSearch'
 
