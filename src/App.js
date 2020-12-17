@@ -5,7 +5,7 @@ import { Route, Switch } from "react-router-dom";
 import NavBar from './Components/Global/Nav/NavBar'
 import Header from './Components/Header/Header'
 import Highlights from './Components/Highlights/Highlights'
-
+import Programs from './Components/Programs/Programs'
 
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
       <NavBar />
       <Header />
       <Highlights />
+      <Programs />
     </>
   );
 }
