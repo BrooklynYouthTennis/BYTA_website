@@ -10,6 +10,7 @@ import Skills from './Components/Skills/Skills'
 // import Testimonials from './Components/Testimonials/Testimonials'
 import Impact from './Components/Impact/Impact'
 import Sponsorships from './Components/Sponsorships/Sponsorships'
+import Subscribe from './Components/Subscribe/Subscribe'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       {/* <Testimonials /> */}
       <Impact />
       <Sponsorships />
+      <Subscribe />
     </>
   );
 }

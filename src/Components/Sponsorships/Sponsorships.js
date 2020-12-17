@@ -1,5 +1,6 @@
 import React from 'react'
 import './Sponsorships.css'
+// import '../../Assets/sponsor1'
 
 
 export default function Sponsorships() {
