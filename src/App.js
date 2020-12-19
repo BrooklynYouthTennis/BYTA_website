@@ -24,9 +24,6 @@ function App() {
       </BrowserRouter>
 
 
-      <HomePage />
-
-
     </>
   );
 }
