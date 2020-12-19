@@ -11,6 +11,7 @@ import Skills from './Components/Skills/Skills'
 import Impact from './Components/Impact/Impact'
 import Sponsorships from './Components/Sponsorships/Sponsorships'
 import Subscribe from './Components/Subscribe/Subscribe'
+// import Footer from './Components/Global/Footer/Footer'
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <Impact />
       <Sponsorships />
       <Subscribe />
+      {/* <Footer /> */}
     </>
   );
 }
