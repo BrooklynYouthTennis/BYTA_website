@@ -39,8 +39,8 @@ function NavBar() {
           <div className="navbarLi"><a href="/getinvolved" >Get Involved</a></div>
           <div className="dropdown-content">
             <a href="/getinvolved/becomesponsor">Become a Sponsor</a>
-            <a href="/UnderConstruction">Volunteer</a>
-            <a href="/UnderConstruction">Donate</a>
+            <a href="/getinvolved/volunteer">Volunteer</a>
+            <a href="/donate">Donate</a>
           </div>
 
         </div>
@@ -48,13 +48,13 @@ function NavBar() {
         <div className="dropdown" id="navbar-links">
 
           <div className="navbarLi">
-            <a href="/ContactUs" >Contact Us</a>
+            <a href="/contactus" >Contact Us</a>
           </div>
 
         </div>
       </div>
 
-      <a href="/supportUs/donate" className="navbar-button" id="donateColor">Support Us</a>
+      <a href="/donate" className="navbar-button" id="donateColor">Support Us</a>
 
       {/* <ul id="navbar-links"> */}
       {/* <NavBarSearch /> */}

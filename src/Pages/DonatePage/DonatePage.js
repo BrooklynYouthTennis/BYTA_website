@@ -1,74 +1,172 @@
-import React from 'react';
-import './DonatePage.css';
-// import CallToAction from '../../Global/CallToAction/CallToAction';
-// import BannerComponent from '../../Global/BannerComponent/Banner';
-// import bannerImage from '../../../Assets/DonateBanner.png';
-
-// const breadText = ["Home", "Support Us", "Donate"]
-// const bannerInfo = {
-//  bannerTitle: "DONATE",
-//  backgroundImage: bannerImage,
-// }
+// import React from 'react';
+import React, { useState } from "react";
+// import './DonatePage.css';
 
 
 function DonatePage() {
+  const [values, setValues] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+  });
+
+  const handleFirstNameInputChange = (event) => {
+    event.persist();
+    setValues((values) => ({
+      ...values,
+      firstName: event.target.value,
+    }));
+  };
+
+  const handleLastNameInputChange = (event) => {
+    event.persist();
+    setValues((values) => ({
+      ...values,
+      lastName: event.target.value,
+    }));
+  };
+
+  const handleEmailInputChange = (event) => {
+    event.persist();
+    setValues((values) => ({
+      ...values,
+      email: event.target.value,
+    }));
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    if (values.firstName && values.lastName && values.email) {
+      setValid(true);
+    }
+    setSubmitted(true);
+  }
+
+  const [submitted, setSubmitted] = useState(false);
+
+  const [valid, setValid] = useState(false);
+
+
   return (
     <>
-      <div className="callToActionContainer">
 
-        <div className="callToActionTop">
-          <p className="ActionWords">Give the Gift of Learning by Supporting</p>
-          <p className="ActionWords">our Organization</p>
-          <img className="blueBarr" src={blueBarr}></img>
-        </div>
+      <form className='register-form' onSubmit={handleSubmit}>
 
+        {valid && <div className='success-message'>Success! Thank you for registering</div>}
 
-        <div className="ButtonContainer">
-          <button className="CallAbutton">$50</button>
-          <button className="CallAbutton">$100</button>
-          <button className="CallAbutton">$150</button>
-          <button className="CallAbutton">OTHER</button>
+        <input
+          id="first-name"
+          className="form-field"
+          type="text"
+          // disabled={valid}
+          placeholder="First Name"
+          name="firstName"
+          value={values.firstName}
+          onChange={handleFirstNameInputChange}
+        />
+        {/* <span id="first-name-error">Please enter a first name</span> */}
+        {submitted && !values.firstName && <span id='first-name-error'>Please enter a first name</span>}
 
+        <input
+          id="last-name"
+          className="form-field"
+          type="text"
+          // disabled={valid}
+          placeholder="Last Name"
+          name="lastName"
+          value={values.lastName}
+          onChange={handleLastNameInputChange}
+        />
+        {submitted && !values.lastName && <span id='last-name-error'>Please enter a last name</span>}
 
-        </div>
-        <div className="yellowCircleDiv">
-          <img src={yellowCircle}></img>
-        </div>
+        <input
+          id="email"
+          className="form-field"
+          type="text"
+          // disabled={valid}
+          placeholder="Email"
+          name="email"
+          value={values.email}
+          onChange={handleEmailInputChange}
+        />
+        {submitted && !values.email && <span id='email-error'>Please enter an email address</span>}
 
-        <div className="purpleCircleDiv">
-          <img src={purple}></img>
-        </div>
+        <input type="submit" value="Submit" />
+        {/* <button type="submit">Submit</button> */}
 
-        <div className="greenCircleDiv">
-          <img src={greenCircle}></img>
-        </div>
-
-        <div className="redCircleDiv">
-          <img src={redVector}></img>
-        </div>
-        {/* <img className="greenCircle" src={greenCircle}></img>
-        <img className="yellowCircle" src={yellowCircle}></img>
-          <img className="redVector" src={redVector}></img>
-        <img className="blueVector" src={blueVector}></img>
-     */}
-        <div className="CallToActionNotes">
-          <p>100% of your donations are invested in programs support and delivrery</p>
-          <p>Donation of all amounts are appreciated and reconized on our social media.</p>
-        </div>
-      </div>
-
-
-
-
-      {/* <BannerComponent breadCrumbText={breadText} info={bannerInfo}/> */}
-      <div className="DonatePageContainer">
-        {/* <CallToAction/> */}
-
-        <button className="">
-        </button>
-      </div>
+        {/* <button>submit</button>
+        <div class='success-message'>Success! Thank you for registering</div> */}
+      </form>
     </>
-  )
-
+  );
 }
+
+// function Example() {
+//   // Declare a new state variable, which we'll call "count"
+//   const [count, setCount] = useState(0);
+
+//   return (
+//     <div>
+//       <p>You clicked {count} times</p>
+//       <button onClick={() => setCount(count + 1)}>
+//         Click me
+//       </button>
+//     </div>
+//   );
+// }
+
+
+// function DonatePage() {
+
+//   //   const [values, setValues] = useState({
+//   //     firstName: '',
+//   //     lastName: '',
+//   //     email: '',
+//   //   });
+
+//   const [count, setCount] = useState(0);
+
+//   return (
+//     <div>
+//       <p>You clicked {count} times</p>
+//       <button onClick={() => setCount(count + 1)}>
+//         Click me
+//       </button>
+//     </div>
+//   );
+// }
+
+
+//   return (
+
+//     <>
+//       <div className="donate">
+
+//         <div className="donateHeader">
+//           Choose Donation Amount
+//         </div>
+
+//         <div className="donateContainer">
+//           <div>
+//             <button className="CallAbutton">$50</button>
+//           </div>
+
+//           <button className="CallAbutton">$100</button>
+//           <button className="CallAbutton">$150</button>
+//           <button className="CallAbutton">OTHER</button>
+
+//           <div className="CallToActionNotes">
+//             <p>100% of your donations are invested in programs support and delivrery</p>
+//             <p>Donation of all amounts are appreciated and reconized on our social media.</p>
+//           </div>
+//         </div>
+
+//         <div className="DonatePageContainer">
+//           <button className=""></button>
+//         </div>
+//       </div>
+//     </>
+//   )
+
+// }
 export default DonatePage;
