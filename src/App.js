@@ -1,8 +1,5 @@
-// import logo from './logo.svg';
 import './App.css';
-// import React, { useState } from "react";
 import React from "react";
-
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import NavBar from './Components/Global/Nav/NavBar';
@@ -24,9 +21,9 @@ function App() {
       <Router>
         <NavBar />
         <Switch>
-          {/* <Route component={PageNotFound} /> */}
-          <Route exact path="/donate" component={DonatePage} />
           <Route exact path="/" component={HomePage} />
+          <Route path="/donate" component={DonatePage} />
+          <Route component={PageNotFound} />
 
         </Switch>
       </Router>
