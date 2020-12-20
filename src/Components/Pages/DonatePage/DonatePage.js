@@ -9,12 +9,23 @@ import './DonatePage.css';
 
 function DonatePage() {
   const [values, setValues] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
+    // firstName: '',
+    // lastName: '',
+    // email: '',
 
-
+    firstName: "",
+    lastName: "",
+    email: "",
+    dType: "",
+    receipt: "",
+    anon: "",
+    list: "",
+    amount: "",
   });
+
+  // =============================
+  // =======Form Inputs===========
+  // =============================
 
   const handleFirstNameInputChange = (event) => {
     event.persist();
