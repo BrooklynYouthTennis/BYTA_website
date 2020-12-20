@@ -8,6 +8,8 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import NavBar from './Components/Global/Nav/NavBar';
 import HomePage from './Pages/HomePage/HomePage';
 import DonatePage from './Pages/DonatePage/DonatePage';
+import PageNotFound from './Components/Global/PageNotFound/PageNotFound'
+
 // import Footer from './Components/Global/Footer/Footer'
 
 // const [values, setValues] = useState({
@@ -22,8 +24,10 @@ function App() {
       <Router>
         <NavBar />
         <Switch>
-          <Route path="/donate" component={DonatePage} />
-          <Route path="/" component={HomePage} />
+          {/* <Route component={PageNotFound} /> */}
+          <Route exact path="/donate" component={DonatePage} />
+          <Route exact path="/" component={HomePage} />
+
         </Switch>
       </Router>
       {/* <Footer />  */}
