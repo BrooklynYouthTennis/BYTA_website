@@ -2,8 +2,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom";
+import './DonatePage.css';
+
 // import { useForm } from 'react-hook-form';
-// import './DonatePage.css';
 
 
 function DonatePage() {
@@ -58,46 +59,41 @@ function DonatePage() {
 
   return (
     <>
+      <div className="donate">
 
-      <form className='register-form' onSubmit={handleSubmit}>
+        <form className='register-form' onSubmit={handleSubmit}>
 
-        {/* {valid && <div className='success-message'>Success! Thank you for registering</div>} */}
-        {/* {valid && <div className='success-message'><Link>'/'</Link>} */}
-
-
+          {/* {valid && <div className='success-message'>Success! Thank you for registering</div>} */}
+          {/* {valid && <div className='success-message'><Link>'/'</Link>} */}
 
 
-        <div className="donation-container">
-          {/* <div class="donation-box"> */}
 
-          <div className="title">Choose a donation amount</div>
 
-          <div className="fields">
-            <input type="text" id="firstName" placeholder="First Name" />
-            <input type="text" id="lastName" placeholder="Last Name" />
-            <input type="text" id="email" placeholder="Email" />
-          </div>
+          <div className="donation-container">
+            {/* <div class="donation-box"> */}
 
-          <div className="amount">
-            <div className="button">$10</div>
-            <div className="button">$25</div>
-            <div className="button">$50</div>
-            <div className="button">$
+            <div className="donation-title">Choose a donation amount</div>
+
+            <div className="donation-amount">
+              <div className="button">$10</div>
+              <div className="button">$25</div>
+              <div className="button">$50</div>
+              <div className="button">$
                 <input type="text" className="set-amount" placeholder="" />
+              </div>
             </div>
-          </div>
 
-          <div className="title">Choose a donation amount</div>
+            <div className="title">Choose a donation amount</div>
 
-          <div className="switch">
-            <input type="radio" class="switch-input" name="view" value="One-Time" id="one-time" checked="" />
-            <label for="one-time" className="switch-label switch-label-off">One-Time</label>
-            <input type="radio" className="switch-input" name="view" value="Monthly" id="monthly" />
-            <label for="monthly" className="switch-label switch-label-on">Monthly</label>
-            <span className="switch-selection"></span>
-          </div>
+            <div className="switch">
+              <input type="radio" class="switch-input" name="view" value="One-Time" id="one-time" checked="" />
+              <label for="one-time" className="switch-label switch-label-off">One-Time</label>
+              <input type="radio" className="switch-input" name="view" value="Monthly" id="monthly" />
+              <label for="monthly" className="switch-label switch-label-on">Monthly</label>
+              <span className="switch-selection"></span>
+            </div>
 
-          <div className="checkboxes">
+            {/* <div className="checkboxes">
             <input type="checkbox" id="receipt" className="checkbox" />
             <label for="receipt">Email Me A Receipt</label>
             <br />
@@ -106,22 +102,26 @@ function DonatePage() {
             <br />
             <input type="checkbox" id="list" className="checkbox" />
             <label for="list">Add Me To Email List</label>
+          </div> */}
+
+            <div className="confirm"></div>
+
+            <div class="donate-button"><i class="fa fa-credit-card"></i> Donate Now</div>
+
+            <input type="submit" value="Submit" />
+
           </div>
 
-          <div className="confirm"></div>
 
-          <div class="donate-button"><i class="fa fa-credit-card"></i> Donate Now</div>
-        </div>
-
-        {/* </div>
+          {/* </div>
 
         </div> */}
 
 
-        {/* </div> */}
+          {/* </div> */}
 
 
-        {/* <input
+          {/* <input
           id="first-name"
           className="form-field"
           type="text"
@@ -154,8 +154,9 @@ function DonatePage() {
         />
         {submitted && !values.email && <span id='email-error'>Please enter an email address</span>} */}
 
-        <input type="submit" value="Submit" />
-      </form>
+
+        </form>
+      </div>
     </>
   );
 }
