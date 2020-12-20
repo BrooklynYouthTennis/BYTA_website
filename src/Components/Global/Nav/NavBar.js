@@ -1,6 +1,7 @@
 import React from 'react'
 import Logo2 from '../../../Assets/NavbarImages/BYTA_Logo.png'
 import Logo from '../../../Assets/NavbarImages/bytalogo.png'
+import { BrowserRouter as Router, Route, Switch, Link, NavLink } from "react-router-dom";
 import "./NavBar.css"
 
 
@@ -8,6 +9,7 @@ function NavBar() {
   return (
     <div className="navbar" >
 
+      <NavLink to="/donate" activeClassName='is-active' >donate here</NavLink>
       <div className="navbar_logo">
         <a href="/"><img src={Logo2} className="brand-title" alt="byta" /></a>
       </div>
