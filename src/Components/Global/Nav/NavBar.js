@@ -2,7 +2,6 @@ import React from 'react'
 import Logo2 from '../../../Assets/NavbarImages/BYTA_Logo.png'
 import Logo from '../../../Assets/NavbarImages/bytalogo.png'
 import "./NavBar.css"
-// import NavBarSearch from './NavBarSearch/NavBarSearch'
 
 
 function NavBar() {
@@ -56,10 +55,6 @@ function NavBar() {
 
       <a href="/donate" className="navbar-button" id="donateColor">Support Us</a>
 
-      {/* <ul id="navbar-links"> */}
-      {/* <NavBarSearch /> */}
-      {/* <a href="/"><img src={Vector} className="vector" alt="placeHolder" /></a> */}
-      {/* </ul> */}
 
     </div>
   );
