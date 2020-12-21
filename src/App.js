@@ -17,10 +17,7 @@ function App() {
         <NavBar />
         <Switch>
           <Route exact path="/" component={HomePage} />
-          {/* <Route path="/donate" component={DonatePage} /> */}
-          <Route path="/donate">
-            <DonatePage />
-          </Route>
+          <Route path="/donate" component={DonatePage} />
           <Route component={PageNotFound} />
 
         </Switch>
