@@ -1,18 +1,8 @@
 .donate{
+  /* border: solid 2px red; */
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-template-columns: repeat(10, 1fr);
-  /* grid-template-areas: 
-  "i i i i i i i i i i" 
-  "i i i i i i i i i i" 
-  "i f f f f f i i i i" 
-  "i f f f f f i i i i" 
-  "i f f f f f i i i i" 
-  "i f f f f f i i i i" 
-  "i i i i i i i i i i"
-  "i i i i i i i i i i" 
-  "i i i i i i i i i i" 
-  "i i i i i i i i i i"  ; */
   background-image: url('../../../../../Assets/DonatePageImages/donate.png');
   background-size: cover;
   /* background-position: center; */
@@ -21,61 +11,103 @@
 }
 
 .register-form{
-  padding: 70px 140px;
-}
-
-
-.donation-container {
-  border: solid 2px red;
-  /* position: relative; */
+  /* border: solid 2px yellowgreen; */
   width: 480px;
-  height: 650px;
-  margin-left: 80px;
-  margin-top: 50px;
+  height: 700px;
+  margin-left: 280px;
+  margin-top: 100px;
   background-color: #354463;
   color: white;
   padding: 50px 40px;
-
-  grid-area: f;
 }
 
 .donation-title{
   font-family: PoynterOSDisp,sans-serif;
   font-size: 18pt;
   font-weight: 800;
-
+  margin-bottom: 30px;
 }
 
 .donation-amount{
-
+  /* border: solid 2px white; */
 }
 
-.button{
-
+.donation1, .donation2, .donation3{
+  display: grid;
+grid-template-columns: 0.5fr .5fr 4fr;
+  /* border: solid blue 2pt; */
+  padding: 20px 0 20px 10px;
+  background: white;
+  color: #354463;
+  border: solid .5px #354463;
 }
 
-.set-amount{
-
-}
-
-.switch{
-
+.donation4{
+padding: 20px;
+background: white;
+  color: #354463;
 }
 
 .switch-input{
+  border: solid 10px red;
+margin: auto;
+}
+
+.switch-label{
+  font-family: PoynterOSDisp, sans-serif;
+  font-size: 38px;
+  font-weight: 600;
+}
+
+.donation-description{
+  width: 80%;
+  margin: auto;
+  font-family: komet, sans-serif;
+  font-size: 12pt;
+  font-weight: 200px;
+}
+
+.donation-label{
+  font-family: komet, sans-serif;
+  font-size: 12pt;
+  font-weight: 200px;
+}
+
+.set-amount{
+  width: 20%;
+  padding-left: 5px;
+  margin-left: 20px;
+}
+
+.set-amount{}
+
+.donation-frequency{
+  font-family: PoynterOSDisp,sans-serif;
+  font-size: 18pt;
+  font-weight: 800;
+  margin: 50px 0 20px; 
+  
+}
+
+.switch{
+display: grid;
+grid-template-columns: 1fr 1fr;
 
 }
 
-.switch-label {
-
+.onetime, .monthly{
+  background: white;
+  color: #354463;
+  padding: 10px;
+  font-family: PoynterOSDisp,sans-serif;
+  font-size: 14pt;
+  font-weight: 400;
 }
-.switch-label-off {
 
-}
-.switch-label-on{
+.switch-label2 {}
 
-}
+.switch-label-off {}
 
-.switch-selection{
+.switch-label-on{}
 
-}
+.switch-selection{}
