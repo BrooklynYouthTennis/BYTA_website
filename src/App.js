@@ -4,7 +4,8 @@ import { BrowserRouter as Router, Route, Switch, Link, NavLink } from "react-rou
 
 import NavBar from './Components/Global/Nav/NavBar';
 import HomePage from './Components/Pages/HomePage/HomePage'
-import DonatePage from './Components/Pages/DonatePage/DonatePage';
+import DonatePage from './Components/Pages/DonatePage/DonateAmount';
+import CheckoutPage from "./Components/Pages/CheckoutPage/Checkout"
 import PageNotFound from './Components/Global/PageNotFound/PageNotFound'
 import Footer from './Components/Global/Footer/Footer'
 
@@ -17,9 +18,9 @@ function App() {
         <NavBar />
         <Switch>
           <Route exact path="/" component={HomePage} />
-          <Route path="/donate" component={DonatePage} />
+          <Route exact path="/donate" component={DonatePage} />
+          <Route path="/donate/checkout" component={CheckoutPage} />
           <Route component={PageNotFound} />
-
         </Switch>
       </Router>
       <Footer />

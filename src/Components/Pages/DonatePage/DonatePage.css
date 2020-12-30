@@ -1,0 +1,158 @@
+.donate{
+  /* border: solid 2px red; */
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-columns: repeat(10, 1fr);
+  background-image: url('../../../Assets/DonatePageImages/donate.png');
+  background-size: cover;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  height: 900px;
+}
+
+.register-form{
+  /* border: solid 2px yellowgreen; */
+  width: 480px;
+  height: 700px;
+  margin-left: 280px;
+  margin-top: 100px;
+  background-color: #354463;
+  color: white;
+  padding: 50px 40px;
+}
+
+/* ==================================
+==========Donate Amount title=========
+================================== */
+.donation-title{
+  font-family: PoynterOSDisp,sans-serif;
+  font-size: 18pt;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+/* ==================================
+==========Donate Amount form=========
+================================== */
+
+.donation-amount{
+  border: solid 1px white;
+}
+
+.donation1, .donation2, .donation3{
+  display: grid;
+grid-template-columns: 0.5fr .5fr 4fr;
+  /* border: solid blue 2pt; */
+  padding: 20px 0 20px 10px;
+  background: white;
+  color: #354463;
+  border-bottom: solid .5px #354463;
+}
+
+
+.donation4{
+  border: solid 1px white;
+padding: 20px;
+background: white;
+  color: #354463;
+  display: flex;
+}
+
+.switch-input{
+margin: auto;
+margin-right: 10px;
+/* margin-left: 0; */
+}
+
+.custom-switch-input{
+  margin: auto 20px auto 10px;
+}
+
+.switch-label{
+  font-family: PoynterOSDisp, sans-serif;
+  font-size: 38px;
+  font-weight: 600;
+}
+
+.donation-description{
+  width: 80%;
+  margin: auto;
+  font-family: komet, sans-serif;
+  font-size: 12pt;
+  font-weight: 200px;
+}
+
+
+
+.donation-label{
+  font-family: komet, sans-serif;
+  font-size: 12pt;
+  font-weight: 200px;
+}
+
+.set-amount{
+  width: 20%;
+  padding-left: 5px;
+  margin-left: 20px;
+}
+
+.set-amount{}
+
+ /* =================================
+==========Donate frequency=========
+================================== */
+
+.donation-frequency{
+  font-family: PoynterOSDisp,sans-serif;
+  font-size: 18pt;
+  font-weight: 800;
+  margin: 50px 0 20px; 
+  
+}
+
+.donation-switch{
+display: grid;
+grid-template-columns: 1fr 1fr;
+margin-bottom: 45px;
+}
+
+.onetime, .monthly{
+  border: white 1px solid;
+  background: white;
+  color: #354463;
+  padding: 10px;
+  font-family: PoynterOSDisp,sans-serif;
+  font-size: 14pt;
+  font-weight: 600;
+}
+.switch-input{
+  margin-left: 20px;
+}
+
+.switch-label2 {
+  /* border: #C1F7D5 2px solid; */
+margin-left: 20px;
+/* padding: 10px; */
+}
+
+.switch-label-off {}
+
+.switch-label-on{}
+
+.switch-selection{}
+
+/* =============================
+==========Checkout Button=========
+============================== */
+.checkout-button{
+  border-radius: 25px;
+  background-color: #C1F7D5;
+  margin-left: 200px;
+  /* margin-top: 300px; */
+  text-decoration: none;
+  padding: 15px 30px;
+  color:  #354463;
+  font-family: PoynterOSDisp, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+}

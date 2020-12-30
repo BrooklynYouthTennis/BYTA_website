@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom";
-import './DonateAmount.css';
+import './DonatePage.css';
 
 function DonateAmount() {
   const [values, setValues] = useState({
@@ -85,7 +85,8 @@ function DonateAmount() {
               <input
                 type="radio"
                 className="custom-switch-input"
-                name="view" value="custom"
+                name="view"
+                value="custom"
                 id="custom" />
               <label
                 className="switch-label 
@@ -98,7 +99,9 @@ function DonateAmount() {
                 className="set-amount"
                 placeholder="$"
                 pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$"
-                data-type="currency"/> 
+                data-type="currency"
+                name="view"
+                id="custom"/> 
               </div>
               
             </div>
@@ -121,7 +124,8 @@ function DonateAmount() {
             
             </form>
 
-            <input className="donate-button" type="submit" value="Go to checkout" />
+          {/* <input className="donate-button" type="submit" value="Go to checkout" /> */}
+          <a href="/donate/checkout" className="checkout-button" type="submit" value="Go to checkout">Go to checkout</a>
                  
         </form>
 
