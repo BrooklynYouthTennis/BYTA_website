@@ -64,7 +64,7 @@ function DonateAmount() {
 
             <div className="donation-amount">
               <div className="donation1">
-              <input type="radio" className="switch-input" name="view" value="$10" id="$10" checked="" />
+              <input type="radio" className="switch-input" name="view" value="$10" id="$10"  />
               <label for="$10" className="switch-label switch-label-off">$10</label>
               <label for="$10" className="donation-description">This buys tennis equipment for one class</label>
               </div>
@@ -81,8 +81,18 @@ function DonateAmount() {
                 <label for="$50" className="donation-description">This buys tennis equipment for one class</label>
                 </div>
 
-              <div className="donation4">
-              <label  className="switch-label switch-label-off donation-label" name="view" id="custom">enter custom amount</label>
+            <div className="donation4">
+              <input
+                type="radio"
+                className="custom-switch-input"
+                name="view" value="custom"
+                id="custom" />
+              <label
+                className="switch-label 
+                switch-label-off 
+                donation-label"
+                name="view"
+                id="custom">Enter Custom Amount</label>
               <input
                 for="custom"
                 className="set-amount"
@@ -96,20 +106,20 @@ function DonateAmount() {
             
             <div className="donation-frequency">Choose a donation frequency</div>
 
-          <div className="switch">
-            
+          <form className="donation-switch">
+
               <div className="monthly">
-              <input type="radio" className="switch-input" name="view" value="One-Time" id="one-time" checked="" />
+                <input type="radio" className="switch-input" name="view" value="One-Time" id="one-time" />
                 <label for="one-time" className="switch-label2 switch-label-off">One-Time</label>
-                </div>
+              </div>
 
               <div className="onetime">
-              <input type="radio" className="switch-input" name="view" value="Monthly" id="monthly" />
-              <label for="monthly" className="switch-label2 switch-label-on">Monthly</label>
+                <input type="radio" className="switch-input" name="view" value="Monthly" id="monthly" />
+                <label for="monthly" className="switch-label2 switch-label-on">Monthly</label>
                 {/* <span className="switch-selection"></span> */}
-            </div>
+              </div>
             
-            </div>
+            </form>
 
             <input className="donate-button" type="submit" value="Go to checkout" />
                  
