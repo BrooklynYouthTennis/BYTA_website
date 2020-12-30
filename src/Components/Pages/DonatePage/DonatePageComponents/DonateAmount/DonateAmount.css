@@ -1,0 +1,81 @@
+.donate{
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-columns: repeat(10, 1fr);
+  /* grid-template-areas: 
+  "i i i i i i i i i i" 
+  "i i i i i i i i i i" 
+  "i f f f f f i i i i" 
+  "i f f f f f i i i i" 
+  "i f f f f f i i i i" 
+  "i f f f f f i i i i" 
+  "i i i i i i i i i i"
+  "i i i i i i i i i i" 
+  "i i i i i i i i i i" 
+  "i i i i i i i i i i"  ; */
+  background-image: url('../../../../../Assets/DonatePageImages/donate.png');
+  background-size: cover;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  height: 900px;
+}
+
+.register-form{
+  padding: 70px 140px;
+}
+
+
+.donation-container {
+  border: solid 2px red;
+  /* position: relative; */
+  width: 480px;
+  height: 650px;
+  margin-left: 80px;
+  margin-top: 50px;
+  background-color: #354463;
+  color: white;
+  padding: 50px 40px;
+
+  grid-area: f;
+}
+
+.donation-title{
+  font-family: PoynterOSDisp,sans-serif;
+  font-size: 18pt;
+  font-weight: 800;
+
+}
+
+.donation-amount{
+
+}
+
+.button{
+
+}
+
+.set-amount{
+
+}
+
+.switch{
+
+}
+
+.switch-input{
+
+}
+
+.switch-label {
+
+}
+.switch-label-off {
+
+}
+.switch-label-on{
+
+}
+
+.switch-selection{
+
+}
