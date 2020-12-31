@@ -1,0 +1,35 @@
+/* ====================================
+===========forms ===================
+==================================== */
+.register-form{
+  display: grid;
+  /* grid-template-columns: 1fr 1fr; */
+}
+
+
+
+/* ====================================
+===========go back link ==============
+==================================== */
+.go-back-link {
+color: #C1F7D5;
+text-decoration: none;
+font-family: komet, sans-serif;
+}
+
+/* ====================================
+===========Payment Button===========
+==================================== */
+.process-payment-button{
+  border-radius: 25px;
+  background-color: #C1F7D5;
+  margin-left: 200px;
+  /* margin-top: 300px; */
+  text-decoration: none;
+  padding: 15px 30px;
+  color:  #354463;
+  font-family: PoynterOSDisp, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+}
+
